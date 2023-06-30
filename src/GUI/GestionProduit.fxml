@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionProduitController">
+   <children>
+      <TableView fx:id="TVProduit" layoutX="202.0" prefHeight="336.0" prefWidth="715.0" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="113.0" text="Produit_Name" />
+          <TableColumn fx:id="colcategorie" prefWidth="67.0" text="Catégo" />
+            <TableColumn fx:id="colfabrication" prefWidth="87.0" text="Date_fab" />
+            <TableColumn fx:id="colexpiration" prefWidth="94.0" text="Date_ex" />
+            <TableColumn fx:id="colprix" prefWidth="57.0" text="Prix" />
+            <TableColumn fx:id="colqte" prefWidth="130.0" text="Qte" />
+        </columns>
+      </TableView>
+      <Button fx:id="ajouter" layoutX="443.0" layoutY="482.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: black;" text="ajouter" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="SUPPRIMER" layoutX="553.0" layoutY="482.0" mnemonicParsing="false" onAction="#SUPPRIMER" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: black;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifier" layoutX="668.0" layoutY="482.0" mnemonicParsing="false" onAction="#modifier" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: black;" text="modifier" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="36.0" layoutY="301.0" text="nom" />
+      <Label layoutX="36.0" layoutY="267.0" text="id" />
+      <Label layoutX="36.0" layoutY="338.0" text="categorie" />
+      <Label layoutX="36.0" layoutY="379.0" text="date fabrication" />
+      <Label layoutX="36.0" layoutY="412.0" text="date expiratoion" />
+      <Label layoutX="415.0" layoutY="292.0" text="prix" />
+      <Label layoutX="422.0" layoutY="360.0" text="qte" />
+      <TextField fx:id="id" layoutX="90.0" layoutY="263.0" />
+      <TextField fx:id="nom" layoutX="90.0" layoutY="297.0" />
+      <TextField fx:id="cat" layoutX="90.0" layoutY="334.0" />
+      <TextField fx:id="dateFab" layoutX="90.0" layoutY="375.0" />
+      <TextField fx:id="dateExp" layoutX="90.0" layoutY="408.0" />
+      <TextField fx:id="prix" layoutX="485.0" layoutY="284.0" />
+      <TextField fx:id="qte" layoutX="478.0" layoutY="356.0" />
+   </children>
+</AnchorPane>

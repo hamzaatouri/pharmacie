@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="773.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UpdatepatController">
+   <children>
+      <AnchorPane id="AnchorPane" onMouseClicked="#back" prefHeight="825.0" prefWidth="1066.0">
+         <children>
+            <TableView fx:id="tvpatient" layoutX="114.0" layoutY="35.0" prefHeight="269.0" prefWidth="921.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                  <TableColumn fx:id="nom" prefWidth="92.0" text="nom" />
+                  <TableColumn fx:id="prenom" prefWidth="105.0" text="prenom" />
+                  <TableColumn fx:id="adresse" prefWidth="93.0" text="adresse" />
+                  <TableColumn fx:id="telephone" prefWidth="138.0" text="telephone" />
+                  <TableColumn fx:id="mail" prefWidth="239.0" text="mail" />
+                  <TableColumn fx:id="birthday" prefWidth="223.0" text="birthday" />
+               </columns>
+            </TableView>
+            <Label layoutX="291.0" layoutY="490.0" prefHeight="21.0" prefWidth="110.0" text="adresse" />
+            <TextField fx:id="tfID" layoutX="449.0" layoutY="330.0" />
+            <Button fx:id="modifier" layoutX="491.0" layoutY="701.0" mnemonicParsing="false" onAction="#modifier" text="Update" />
+            <Label layoutX="291.0" layoutY="382.0" prefHeight="21.0" prefWidth="110.0" text="nom" />
+            <Label layoutX="291.0" layoutY="335.0" prefHeight="21.0" prefWidth="110.0" text="ID" />
+            <Label layoutX="291.0" layoutY="558.0" prefHeight="21.0" prefWidth="110.0" text="mail" />
+            <Label layoutX="291.0" layoutY="432.0" prefHeight="21.0" prefWidth="110.0" text="prenom" />
+            <Label layoutX="291.0" layoutY="658.0" prefHeight="21.0" prefWidth="110.0" text="birthday" />
+            <TextField fx:id="tfmail" layoutX="449.0" layoutY="542.0" />
+            <TextField fx:id="tfadresse" layoutX="449.0" layoutY="485.0" />
+            <TextField fx:id="tfprenom" layoutX="449.0" layoutY="427.0" />
+            <TextField fx:id="tfnom" layoutX="449.0" layoutY="377.0" />
+            <Label layoutX="291.0" layoutY="606.0" prefHeight="21.0" prefWidth="110.0" text="telephone" />
+            <TextField fx:id="tftelephone" layoutX="449.0" layoutY="590.0" />
+            <DatePicker fx:id="tfbirthday" layoutX="451.0" layoutY="642.0" />
+            <Button fx:id="back" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#back" text="back" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

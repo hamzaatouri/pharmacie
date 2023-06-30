@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuVchequeController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="IDcheque" prefHeight="410.0" prefWidth="699.0">
+         <children>
+            <Label layoutX="53.0" layoutY="14.0" prefHeight="37.0" prefWidth="318.0" text="Paiement Par Chèque">
+               <font>
+                  <Font name="Bookman Old Style Italic" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7763158082962036" green="0.7058722972869873" blue="0.07188109308481216" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Line fx:id="line" endX="312.5" layoutX="365.0" layoutY="347.0" startX="-365.0" />
+            <TableView fx:id="TVSOMME" layoutX="14.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0">
+               <columns>
+                  <TableColumn fx:id="P_NAME" prefWidth="101.0" text="Produit_Name" />
+                  <TableColumn fx:id="PRIX" prefWidth="98.0" text="Prix" />
+               </columns>
+            </TableView>
+            <Label layoutX="460.0" layoutY="357.0" text="Pharmacie Esprit Rue 806 Charguia 2 ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="349.0" text="N° TEL:000000000" />
+            <Button fx:id="BACK" layoutX="623.0" layoutY="14.0" mnemonicParsing="false" onAction="#BACK" text="back" />
+            <TextField fx:id="somme" layoutX="140.0" layoutY="294.0" promptText="00.00DT" />
+            <Label layoutX="22.0" layoutY="295.0" text="TOTALE">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.506256103515625" green="0.5394737124443054" blue="0.20729775726795197" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.06128167733550072" green="0.06578947603702545" blue="0.020711500197649002" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="241.0" fitWidth="124.0" layoutX="323.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/download-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="215.0" layoutY="376.0" text="Prenez soin de vous ">
+               <font>
+                  <Font name="Bodoni MT Black Italic" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.27607977390289307" green="0.7099999785423279" blue="0.13490000367164612" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imp" fitHeight="55.0" fitWidth="96.0" layoutX="625.0" layoutY="290.0" onMouseClicked="#imp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/imp.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

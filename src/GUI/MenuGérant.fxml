@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1271.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuGérantController">
+   <left>
+      <VBox prefHeight="733.0" prefWidth="174.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="home" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="181.0" text="HOME" textFill="#c30000" />
+            <Button fx:id="users" mnemonicParsing="false" onMouseClicked="#users" prefHeight="31.0" prefWidth="187.0" text="Gestion des utilisateurs" textFill="#c30000" />
+            <Button fx:id="commande" mnemonicParsing="false" onMouseClicked="#comaande" prefHeight="31.0" prefWidth="176.0" text="Gestion des commandes" textFill="#c30000" />
+            <Button fx:id="fournisseurs" mnemonicParsing="false" onMouseClicked="#fournisseurs" prefHeight="31.0" prefWidth="187.0" text="Gestion des fournisseurs" textFill="#c30000" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="734.0" prefWidth="1106.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#b90169" layoutX="567.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Label layoutX="486.0" layoutY="27.0" prefHeight="40.0" prefWidth="210.0" text="ESPACE GERANT" textFill="#1a0a97">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

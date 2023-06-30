@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1342.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MenuPharmacienController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="189.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="48.0" prefWidth="229.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="HOME" textFill="WHITE" />
+            <Button fx:id="patientbtn" mnemonicParsing="false" onMouseClicked="#patientmanagement" prefHeight="48.0" prefWidth="233.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="GESTION DES PATIENTS" textFill="WHITE" />
+            <Button mnemonicParsing="false" onMouseClicked="#salesmanagement" prefHeight="48.0" prefWidth="227.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="GESTION DES VENTES" textFill="WHITE" />
+            <Button mnemonicParsing="false" onMouseClicked="#medecinemanagement" prefHeight="48.0" prefWidth="229.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="GESTION DES PRODUITS" textFill="WHITE" />
+            <Button mnemonicParsing="false" onMouseClicked="#ASCI" prefHeight="48.0" prefWidth="229.0" style="-fx-border-color: white; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" text="ASCI" textFill="WHITE" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="779.0" prefWidth="1016.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="hide" layoutX="179.0" layoutY="169.0" mnemonicParsing="false" text="Button" visible="false" />
+            <Text fill="WHITE" layoutX="464.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Label layoutX="359.0" layoutY="38.0" prefHeight="36.0" prefWidth="299.0" text="ESPACE PHARMACIEN" textAlignment="CENTER" textFill="#f8f8f8">
+               <font>
+                  <Font name="Cambria Bold" size="29.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

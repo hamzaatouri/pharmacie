@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="910.0" prefWidth="1318.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MailController">
+   <children>
+      <Label layoutX="800.0" layoutY="293.0" text="TO" />
+      <Label layoutX="785.0" layoutY="419.0" text="Subject" />
+      <Label layoutX="790.0" layoutY="592.0" text="Message" />
+      <Label layoutX="792.0" layoutY="358.0" text="From" />
+      <TextField fx:id="to" layoutX="865.0" layoutY="288.0" prefHeight="31.0" prefWidth="391.0" />
+      <TextField fx:id="from" layoutX="866.0" layoutY="353.0" prefHeight="31.0" prefWidth="391.0" />
+      <TextField fx:id="subject" layoutX="865.0" layoutY="414.0" prefHeight="31.0" prefWidth="391.0" />
+      <TextArea fx:id="message" layoutX="865.0" layoutY="502.0" prefHeight="200.0" prefWidth="391.0" />
+      <Button fx:id="send" layoutX="1034.0" layoutY="725.0" mnemonicParsing="false" onAction="#send" text="Send" />
+      <TableView fx:id="patienttable" layoutX="57.0" layoutY="137.0" prefHeight="575.0" prefWidth="476.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="37.999969482421875" text="ID" />
+            <TableColumn fx:id="nom" prefWidth="144.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="114.0" text="PRENOM" />
+            <TableColumn fx:id="email" prefWidth="178.0" text="E-MAIL" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tvresultat" layoutX="533.0" layoutY="137.0" prefHeight="575.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="resultat" prefWidth="199.0" text="Resultat" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="back" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/back-arrow-emoji.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
